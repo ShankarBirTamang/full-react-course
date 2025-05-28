@@ -5,7 +5,7 @@ import Weather from "../components/Weather";
 function App() {
   return (
     <>
-      <Weather />
+      <Weather temp={20} />
       <UserStatus loggedIn={true} isAdmin={true} />
       <Greeting timeOfDay="afternoon" />
     </>
