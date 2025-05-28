@@ -6,10 +6,20 @@ const ProfileCard = () => {
             padding : '15px',
             borderRadius : '8px',
             color : 'black'
-        }
+        },
+        title: {
+          fontSize: '32px',
+          fontWeight: 'bold',
+          marginBottom: '10px',
+        } ,
+         description: {
+        fontSize: '0.9rem',
+        marginLeft : '1rem'
+    }
     }
   return (
     <div style={styles.container}>
+      <h1 style={styles.title}>ProfileCard</h1>
       <p>
         1. Create a new file called `ProfileCard.jsx`.
         <br/>
@@ -17,8 +27,7 @@ const ProfileCard = () => {
         <br/>
         3. Define a `styles` object to hold the CSS properties:
         <br/>
-        <br/>
-        <div>
+        <div style={styles.description}>
         - Set the background color to light gray.
         <br/>
         - Set padding to `15px`.
